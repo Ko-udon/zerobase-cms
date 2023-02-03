@@ -1,6 +1,6 @@
 package com.zerobase.cms.user.client.domain.model;
 
-import com.zerobase.cms.user.client.domain.BaseEntity;
+import com.zerobase.cms.user.client.domain.repository.BaseEntity;
 import com.zerobase.cms.user.client.domain.SignUpform;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
