@@ -1,4 +1,4 @@
-package com.zerobase.cms.user.client.domain;
+package com.zerobase.cms.user.client.domain.repository;
 
 import java.time.LocalDateTime;
 import javax.persistence.EntityListeners;
