@@ -7,6 +7,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 public interface CustomerBalanceHistoryRepository extends JpaRepository<CustomerBalanceHistory,Long> {
 
-  Optional<CustomerBalanceHistory> findFirstByCustomer_IdAndOrderByDesc(@RequestParam("customer_id") Long customerId);
+  Optional<CustomerBalanceHistory> findFirstByCustomer_IdOrderByIdDesc(@RequestParam("customer_id") Long customerId);
 
 }

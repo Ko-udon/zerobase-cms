@@ -43,8 +43,9 @@ public class CustomerController {
   @PostMapping("/balance")
   public ResponseEntity<Integer> changeBalance(@RequestHeader(name = "X-AUTH-TOKEN") String token,
       @RequestBody ChangeBalanceFrom from) {
-    //ㅇㄹ
-    return null;
+    UserVo vo = provider.getUserVo(token);
+
+    return ResponseEntity.ok(customerBalanceService.changeBalance(vo.getId(),from).getCurrentMoney());
 
   }
 
