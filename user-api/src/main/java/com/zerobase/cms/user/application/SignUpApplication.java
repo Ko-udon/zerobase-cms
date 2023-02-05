@@ -68,7 +68,7 @@ public class SignUpApplication {
                 .build();
 
             log.info("Send email result: "+mailgunClient.sendEmail(sendMailForm));
-            //sellerService.ChangeCustomerValidateEmail(seller.getId(),code);
+            sellerService.ChangeCustomerValidateEmail(seller.getId(),code);
             return "회원 가입에 성공하였습니다.";
         }
 
