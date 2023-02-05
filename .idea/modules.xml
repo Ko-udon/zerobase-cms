@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/user-api/com.zerobase.cms.zerobase-cms.user-api.main.iml" filepath="$PROJECT_DIR$/.idea/modules/user-api/com.zerobase.cms.zerobase-cms.user-api.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/zerobase-domain/com.zerobase.cms.zerobase-cms.zerobase-domain.main.iml" filepath="$PROJECT_DIR$/.idea/modules/zerobase-domain/com.zerobase.cms.zerobase-cms.zerobase-domain.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/zerobase-cms.main.iml" filepath="$PROJECT_DIR$/.idea/modules/zerobase-cms.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/user-api/zerobase-cms.user-api.iml" filepath="$PROJECT_DIR$/.idea/modules/user-api/zerobase-cms.user-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/user-api/zerobase-cms.user-api.main.iml" filepath="$PROJECT_DIR$/.idea/modules/user-api/zerobase-cms.user-api.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/zerobase-domain/zerobase-cms.zerobase-domain.main.iml" filepath="$PROJECT_DIR$/.idea/modules/zerobase-domain/zerobase-cms.zerobase-domain.main.iml" />
     </modules>

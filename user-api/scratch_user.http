@@ -1,0 +1,80 @@
+### 회원가입 (고객)
+POST http://localhost:8080/signup/customer
+Content-Type: application/json
+
+{
+  "birth": "1999-02-20",
+  "email": "eastFriend22@gmail.com",
+  "name": "myName",
+  "password": "ko",
+  "phone": "010-0000-0000"
+}
+
+### 이메일 인증 (고객)
+GET http://localhost:8080/signup/customer/verify?email=eastFriend22@gmail.com&code=s5hlH27rje
+
+### 로그인 (고객)
+POST http://localhost:8080/signin/customer
+Content-Type: application/json
+
+{
+  "email": "eastFriend22@gmail.com",
+  "password": "ko"
+}
+
+### 회원 정보 조회 (고객)
+GET http://localhost:8080/customer/getInfo
+Content-Type: application/json
+X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1TGlGaEc5eXBvOFJwUXdaVkp4U2VvbWw1SWdSeHlSamJCcmpwZ3prc2ZFPSIsImp0aSI6IkNtWUR2NU1LNVlVeWlrOEtHTkR3b3c9PSIsInJvbGVzIjoiQ1VTVE9NRVIiLCJpYXQiOjE2NzU2MTE1ODcsImV4cCI6MTY3NTY5Nzk4N30.Q7b-ngoxVJPl_ys2VjYF0hQKqV0YKrjp4D0r4OyqLQM
+
+
+### 잔액 변경 (고객)
+POST http://localhost:8080/customer/balance
+Content-Type: application/json
+X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1TGlGaEc5eXBvOFJwUXdaVkp4U2VvbWw1SWdSeHlSamJCcmpwZ3prc2ZFPSIsImp0aSI6IkNtWUR2NU1LNVlVeWlrOEtHTkR3b3c9PSIsInJvbGVzIjoiQ1VTVE9NRVIiLCJpYXQiOjE2NzU2MTE1ODcsImV4cCI6MTY3NTY5Nzk4N30.Q7b-ngoxVJPl_ys2VjYF0hQKqV0YKrjp4D0r4OyqLQM
+
+{
+  "from": "Administrator",
+  "message": "돈 충전 테스트",
+  "money": 3000
+}
+
+
+#############################
+
+### 회원가입 (샐러)
+POST http://localhost:8080/signup/seller
+Content-Type: application/json
+
+{
+  "birth": "1999-02-02",
+  "email": "ehddn2202@gmail.com",
+  "name": "myName2",
+  "password": "ko",
+  "phone": "010-0000-0000"
+}
+
+
+### 이메일 인증 (샐러)
+GET http://localhost:8080/signup/seller/verify?email=ehddn2202@gmail.com&code=rnpNbsPHbY
+
+
+
+### 로그인 (샐러)
+POST http://localhost:8080/signin/seller
+Content-Type: application/json
+
+{
+  "email": "ehddn2202@gmail.com",
+  "password": "ko"
+}
+
+
+### 회원 정보 조회 (샐러)
+GET http://localhost:8080/seller/getInfo
+Content-Type: application/json
+X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0c0dUL1B0MlQyOUlmQjI0QUhYL2hiRTB1TFl5RlFQMVV6bk1ZQ2FiNVRBPSIsImp0aSI6IkNtWUR2NU1LNVlVeWlrOEtHTkR3b3c9PSIsInJvbGVzIjoiU0VMTEVSIiwiaWF0IjoxNjc1NjEzMjIyLCJleHAiOjE2NzU2OTk2MjJ9.d9PktFWqwcuQpxet3Mjhi7Pa0oFoo6tyPNk0TSvvFdU
+
+
+
+
