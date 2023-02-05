@@ -1,6 +1,6 @@
 package com.zerobase.cms.user.client.config.filter;
 
-import com.zerobase.cms.user.client.service.CustomerService;
+import com.zerobase.cms.user.client.service.customer.CustomerService;
 import com.zerobase.domain.common.UserVo;
 import com.zerobase.domain.config.JwtAuthenticationProvider;
 import java.io.IOException;
