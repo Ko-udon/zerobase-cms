@@ -23,7 +23,9 @@ public class SellerService {
     }
 
     public Optional<Seller> findValidSeller(String email, String password) {
-        return sellerRepository.findByEmailAndPasswordAndVerifyIsTrue(email, password);
+        return sellerRepository.findByEmail(email).stream()
+            .filter(seller -> seller.getPassword().equals(password) && seller.isVerify())
+            .findFirst();
     }
 
     //seller 회원가입
@@ -36,6 +38,7 @@ public class SellerService {
         return sellerRepository.findByEmail(email).isPresent();
     }
 
+    @Transactional
     public void verifyEmail(String email, String code) {
         Seller seller = sellerRepository.findByEmail(email)
             .orElseThrow(() -> new CustomException(ErrorCode.NOT_FOUND_USER));
