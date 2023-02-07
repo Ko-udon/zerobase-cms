@@ -1,4 +1,4 @@
-package com.zerobase.cms.order.config;
+package com.zerobase.order.config;
 
 import com.zerobase.domain.config.JwtAuthenticationProvider;
 import org.springframework.context.annotation.Bean;

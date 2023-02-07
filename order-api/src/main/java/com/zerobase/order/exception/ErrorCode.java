@@ -1,4 +1,4 @@
-package com.zerobase.cms.order.exception;
+package com.zerobase.order.exception;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
@@ -7,7 +7,8 @@ import org.springframework.http.HttpStatus;
 @RequiredArgsConstructor
 @Getter
 public enum ErrorCode {
-  Already_REGISTED_ACCOUNT(HttpStatus.BAD_REQUEST, "이미 가입된 회원입니다."),
+  NOT_FOUND_PRODUCT(HttpStatus.BAD_REQUEST, "상품 정보가 없습니다."),
+  SAVE_ITEM_NAME(HttpStatus.BAD_REQUEST,"아이템 명 중복입니다."),
 
   ;
 
