@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequiredArgsConstructor
-@RequestMapping(value = "/seller")
+//@RequestMapping(value = "")
 public class SellerController {
 
   private final JwtAuthenticationProvider provider;
