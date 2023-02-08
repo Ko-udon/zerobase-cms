@@ -1,4 +1,4 @@
-package com.zerobase.cms.order.config;
+package com.zerobase.order.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
