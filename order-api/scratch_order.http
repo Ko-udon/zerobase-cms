@@ -21,8 +21,8 @@ Content-Type: application/json
 X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0c0dUL1B0MlQyOUlmQjI0QUhYL2hiRTB1TFl5RlFQMVV6bk1ZQ2FiNVRBPSIsImp0aSI6IkNtWUR2NU1LNVlVeWlrOEtHTkR3b3c9PSIsInJvbGVzIjoiU0VMTEVSIiwiaWF0IjoxNjc1OTAwNjMxLCJleHAiOjE2NzU5ODcwMzF9.Jecty7a1f3zi0paPle8JkzEyeIdi0oX-U32-LIFlSOU
 
 {
-  "productId": 1,
-  "count": 1,
+  "productId": 2,
+  "count": 2,
   "name": "280",
   "price": 10000
 }
@@ -83,11 +83,18 @@ X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0c0dUL1B0MlQyOUlmQjI0QUhYL2hiRTB1T
 
 
 
-
-
-
 ### 상품 아이템 삭제
 DELETE http://localhost:8082/seller/product/item?id=2
 Content-Type: application/json
 X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0c0dUL1B0MlQyOUlmQjI0QUhYL2hiRTB1TFl5RlFQMVV6bk1ZQ2FiNVRBPSIsImp0aSI6IkNtWUR2NU1LNVlVeWlrOEtHTkR3b3c9PSIsInJvbGVzIjoiU0VMTEVSIiwiaWF0IjoxNjc1OTAwNjMxLCJleHAiOjE2NzU5ODcwMzF9.Jecty7a1f3zi0paPle8JkzEyeIdi0oX-U32-LIFlSOU
 
+
+### 상품 검색
+GET http://localhost:8082/search/product?name=나이키
+Content-Type: application/json
+
+
+
+### 상품 디테일 검색
+GET http://localhost:8082/search/product/detail?productId=1
+Content-Type: application/json
